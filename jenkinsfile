@@ -14,7 +14,9 @@ pipeline {
             input{
                 message "select version"
                 ok "ver selected"
+                parameters{
                 choice(name:'new app',choices:['1','2','3'])
+                }
             }
             steps {
                 script{
